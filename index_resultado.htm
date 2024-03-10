@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La voz de la Ciudad</title>
+    <style>
+      body {
+        background-color: cornflowerblue;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body a:visited { /* Enlaces visitados */
+        color:white; 
+      }
+
+      /* Encabezado */
+      header {
+        background-image: url("logo.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 80px; /* Le damos la altura de la imagen, pues si no el h1 puede ser más corto y no verse toda la imagen */
+      }
+      header h1 {
+        /* Esta es una de las técnicas para hacer que un encabezado no se eva
+        cuando usamos una imagen en su lugar, pero que si sea leída por un lector de pantalla */
+        text-indent: -10000px;
+      }
+      main h2 {
+        font-size: x-large;
+      }
+
+      /* Secciones */
+      section {
+        clear: left; /* Para que el contenido deje de flotar */
+        margin-top: 1em; /* 1em es el tamaño del texto del contenedor. 2em sería el doble, 0.5 la mitad */
+      }
+      section h3 {
+        color: #235412;
+        font-size: large;
+      }
+      section h4 {
+        clear: left; /* Para que el contenido deje de flotar */
+      }
+      article img {
+        float: left; /* Ponemos a flotar la imagen, con lo que el texto quedará a su derecha */
+        width: 200px;
+        margin-right: 1em;
+      }
+      section ul {
+        list-style-type: square; /* Usar cuadrados para los elementos de la lista */
+      }
+
+      /* Tabla */
+      table {
+        margin: auto; /* Centramos la tabla */
+      }
+      table th {
+        color: #1200ff;
+        font-size: large;
+      }
+      table td {
+        border: 1px ridge white;
+      }
+      /* En los dos siguientes casos, podríamos usar ids o clases indiferentemente, pues
+      no hay más de uno en la página */
+      .encabezadoTabla {
+        background-color: white;
+        text-align: center;
+      }
+      #temperaturas {
+        background-color: green;
+        text-align: right; /* Texto alineado a la derecha */
+      }
+
+      /* Pie */
+      footer {
+        text-align: center;
+        font-style: italic; /* texto en cursiva */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>La voz de la Ciudad</h1>
+    </header>
+    <main>
+      <h2>Noticias</h2>
+      <section>
+        <h3>Política</h3>
+        <article>
+          El alcalde <strong>Avelino Pérez</strong> ha comentado
+          <q>Hoy es un gran día para la ciudad</q> en el acto de inaguración del
+          nuevo monumento.
+        </article>
+      </section>
+      <section>
+        <h3>Sucesos</h3>
+        <article>
+          <h4>Incendian un coche en Coia</h4>
+          <img src="incendio.webp" alt="Coche incendiado" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            nihil aut nulla, similique non modi ab tempora quis! Sint, molestiae
+            animi neque praesentium in iste beatae nostrum a laboriosam
+            deleniti!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            magni nihil corporis, odit natus doloremque similique sapiente. Esse
+            impedit eum saepe dolore maxime ducimus necessitatibus illum
+            corporis odit perspiciatis, sed corrupti laudantium eligendi
+            molestias fuga velit molestiae fugit voluptates sunt repellat unde.
+            Ipsa iure, laudantium explicabo et ad at rem voluptas numquam harum
+            enim exercitationem, quae perspiciatis assumenda, nostrum error
+            repudiandae! Doloribus quas minus distinctio autem nemo! Quae fugiat
+            nesciunt odio, exercitationem dolorum eveniet hic omnis rem incidunt
+            esse iure cupiditate, porro mollitia sequi, suscipit deleniti
+            necessitatibus sapiente sed facilis dolores itaque ad veniam maxime.
+            Eligendi aspernatur fugit vitae, quia quaerat labore optio veritatis
+            quo, neque explicabo voluptatibus doloremque illum temporibus, hic
+            magni esse praesentium dolores ex nulla voluptas autem molestias
+            ipsa at nemo. Error eligendi unde quaerat. Quo voluptates quaerat
+            fuga ipsum? Ab dolore atque odio aut non aliquam expedita sed ad qui
+            blanditiis nemo exercitationem eius dolorum, quasi quam sint
+            possimus eveniet voluptate explicabo inventore doloribus. Quaerat
+            natus fuga ducimus corporis, qui at id ratione eius numquam,
+            voluptatum quia! Consectetur error labore tempore unde distinctio
+            ipsam aperiam possimus doloribus non perspiciatis minima minus
+            quibusdam sit assumenda consequatur deserunt aut, numquam ullam
+            neque officia explicabo ipsum. Assumenda iusto, temporibus mollitia
+            ipsam cum eaque! Assumenda id obcaecati hic totam accusantium
+            tempore explicabo temporibus, officia quaerat excepturi asperiores,
+            placeat natus modi voluptatem et. In ab nam cupiditate itaque vitae
+            reiciendis officia tempora consequuntur laboriosam doloremque
+            nesciunt saepe, quos tenetur quaerat ipsa laborum, eaque excepturi
+            facere repellendus fugit ducimus error dignissimos dolorum.
+            Consequatur voluptate incidunt omnis, impedit reiciendis quis
+            sapiente optio a excepturi blanditiis in, autem ea, enim ratione
+            amet laboriosam consequuntur quae delectus tempore laborum nesciunt
+            iusto quo dolore dolorem! Eveniet quasi minima dolore sequi ducimus
+            ab accusamus, mollitia veniam tempora, voluptatibus molestiae
+            quibusdam neque pariatur asperiores, quisquam ullam temporibus
+            aspernatur.
+          </p>
+        </article>
+        <article>
+          <h4>Accidente de tráfico</h4>
+          <img
+            src="Accidente-de-trafico.jpg.webp"
+            alt="Accidente de dos coches"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            nihil aut nulla, similique non modi ab tempora quis! Sint, molestiae
+            animi neque praesentium in iste beatae nostrum a laboriosam
+            deleniti!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            magni nihil corporis, odit natus doloremque similique sapiente. Esse
+            impedit eum saepe dolore maxime ducimus necessitatibus illum
+            corporis odit perspiciatis, sed corrupti laudantium eligendi
+            molestias fuga velit molestiae fugit voluptates sunt repellat unde.
+            Ipsa iure, laudantium explicabo et ad at rem voluptas numquam harum
+            enim exercitationem, quae perspiciatis assumenda, nostrum error
+            repudiandae! Doloribus quas minus distinctio autem nemo! Quae fugiat
+            nesciunt odio, exercitationem dolorum eveniet hic omnis rem incidunt
+            esse iure cupiditate, porro mollitia sequi, suscipit deleniti
+            necessitatibus sapiente sed facilis dolores itaque ad veniam maxime.
+            Eligendi aspernatur fugit vitae, quia quaerat labore optio veritatis
+            quo, neque explicabo voluptatibus doloremque illum temporibus, hic
+            magni esse praesentium dolores ex nulla voluptas autem molestias
+            ipsa at nemo. Error eligendi unde quaerat. Quo voluptates quaerat
+            fuga ipsum? Ab dolore atque odio aut non aliquam expedita sed ad qui
+            blanditiis nemo exercitationem eius dolorum, quasi quam sint
+            possimus eveniet voluptate explicabo inventore doloribus. Quaerat
+            natus fuga ducimus corporis, qui at id ratione eius numquam,
+            voluptatum quia! Consectetur error labore tempore unde distinctio
+            ipsam aperiam possimus doloribus non perspiciatis minima minus
+            quibusdam sit assumenda consequatur deserunt aut, numquam ullam
+            neque officia explicabo ipsum. Assumenda iusto, temporibus mollitia
+            ipsam cum eaque! Assumenda id obcaecati hic totam accusantium
+            tempore explicabo temporibus, officia quaerat excepturi asperiores,
+            placeat natus modi voluptatem et. In ab nam cupiditate itaque vitae
+            reiciendis officia tempora consequuntur laboriosam doloremque
+            nesciunt saepe, quos tenetur quaerat ipsa laborum, eaque excepturi
+            facere repellendus fugit ducimus error dignissimos dolorum.
+            Consequatur voluptate incidunt omnis, impedit reiciendis quis
+            sapiente optio a excepturi blanditiis in, autem ea, enim ratione
+            amet laboriosam consequuntur quae delectus tempore laborum nesciunt
+            iusto quo dolore dolorem! Eveniet quasi minima dolore sequi ducimus
+            ab accusamus, mollitia veniam tempora, voluptatibus molestiae
+            quibusdam neque pariatur asperiores, quisquam ullam temporibus
+            aspernatur.
+          </p>
+        </article>
+      </section>
+      <hr />
+      <section>
+        <h3>Deportes</h3>
+        <article>
+          <img src="futbol.jpg" alt="Partido" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            nihil aut nulla, similique non modi ab tempora quis! Sint, molestiae
+            animi neque praesentium in iste beatae nostrum a laboriosam
+            deleniti!
+          </p>
+        </article>
+      </section>
+      <section>
+        <h3>Otros</h3>
+        <ul>
+          <li><a href="">Cultura</a></li>
+          <li><a href="">Comercio</a></li>
+          <li><a href="">Local</a></li>
+          <li><a href="">Internacional</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Tiempo</h3>
+        <table cellspacing="0">
+          <tr class="encabezadoTabla">
+            <th colspan="5">Días</th>
+          </tr>
+          <tr>
+            <td>Lunes</td>
+            <td>Martes</td>
+            <td>Miércoles</td>
+            <td>Jueves</td>
+            <td>Viernes</td>
+          </tr>
+          <tr>
+            <td><img src="sol.png" alt="soleado" /></td>
+            <td><img src="sol.png" alt="soleado" /></td>
+            <td><img src="sol.png" alt="soleado" /></td>
+            <td><img src="nubes.png" alt="nublado" /></td>
+            <td><img src="lluvia.png" alt="lluvioso" /></td>
+          </tr>
+          <tr id="temperaturas">
+            <td>21º</td>
+            <td>20º</td>
+            <td>22º</td>
+            <td>18º</td>
+            <td>16º</td>
+          </tr>
+        </table>
+      </section>
+      <footer>
+        <hr width="75%" />
+        <p>&copy; 2024 La Voz de la Ciudad</p>
+      </footer>
+    </main>
+  </body>
+</html>
